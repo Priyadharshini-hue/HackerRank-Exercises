@@ -1,0 +1,14 @@
+#include<stdio.h>
+int max(int q, int e){
+    return q>e?q:e;
+}
+int max_fours(int m,int n,int y,int z){
+    return max(m,max(n,max(y,z)));
+}
+
+int main(){
+    int a,b,c,d;
+    scanf("%d %d %d %d",&a,&b,&c,&d);
+    printf("%d",max_fours(a,b,c,d));
+    return 0;
+}
